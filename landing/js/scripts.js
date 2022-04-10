@@ -88,21 +88,21 @@ jQuery(function ($) {
     })
 
    // 6. custom counter js with scrolling
-    var isFirstTime = true;
-    var countSelector = $('.single-counter > span, .single-card > h3');
-    if(countSelector.length) {
-        var startingTop = countSelector.offset().top - window.innerHeight;
-        if(startingTop > 0) {
-            $(window).on( 'scroll', function() {
-                if (isFirstTime && $(window).scrollTop() > startingTop) {
-                    startCounting();
-                    isFirstTime = false;
-                }
-            });
-        } else{
-            startCounting();
-        }
-    }
+   //  var isFirstTime = true;
+    // var countSelector = $('.single-counter > span, .single-card > h3');
+    // if(countSelector.length) {
+    //     var startingTop = countSelector.offset().top - window.innerHeight;
+    //     if(startingTop > 0) {
+    //         $(window).on( 'scroll', function() {
+    //             if (isFirstTime && $(window).scrollTop() > startingTop) {
+    //                 startCounting();
+    //                 isFirstTime = false;
+    //             }
+    //         });
+    //     } else{
+    //         startCounting();
+    //     }
+    // }
 
     /**
      * Get the increment value
@@ -164,7 +164,6 @@ jQuery(function ($) {
         for (var i = 0; i < countersQuantity; i++) {
             counter[i] = parseInt(counters[i].innerHTML);
         }
-    console.log(counter)
         // calling all count function
         for (var j = 0; j < countersQuantity; j++) {
             count(counters, 0, counter[j], j);
