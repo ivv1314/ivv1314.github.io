@@ -75,7 +75,7 @@
                     <p class="px-2">Selamat datang, silakan masuk ke akun Anda.</p>
                     <div class="card-content mb-4">
                       <div class="card-body pt-1">
-                        <form method="POST" action="javascript:;">
+                        <form id="form" method="POST" action="javascript:">
                           <input type="hidden" name="_token" value="8eoAyt36MJJ5PVKquk98mXyUCQiFUP5wJaBV17Jx">
                           <fieldset class="form-label-group form-group position-relative has-icon-left">
                             <input id="email" placeholder="E-mail Address" type="email" class="form-control "
@@ -92,7 +92,7 @@
                             <div class="form-control-position">
                               <i class="feather icon-lock"></i>
                             </div>
-                            <label for="user-password">Password</label>
+                            <label for="password">Password</label>
                           </fieldset>
                           <div class="form-group d-flex justify-content-between align-items-center">
                             <div class="text-left">
@@ -108,13 +108,13 @@
                                 </div>
                               </fieldset>
                             </div>
-                            <div class="text-right">
-                              <a class="card-link" href="./password/reset">
-                                Forgot Your Password?
-                              </a>
-                            </div>
+<!--                            <div class="text-right">-->
+<!--                              <a class="card-link" href="./password/reset">-->
+<!--                                Forgot Your Password?-->
+<!--                              </a>-->
+<!--                            </div>-->
                           </div>
-                          <a href=./register
+                          <a href="./register.html"
                             class="btn btn-outline-primary float-left btn-inline">Register</a>
                           <button type="submit" class="btn btn-primary float-right btn-inline">Login</button>
                         </form>
@@ -136,11 +136,10 @@
 <!-- BEGIN: Vendor JS-->
 <script src="./app-assets/vendors/js/vendors.min.js"></script>
 <!-- BEGIN Vendor JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.js"></script>
+<script src="./libs/feather-icons/feather.js"></script>
 <!-- BEGIN: Theme JS-->
 <script src="./app-assets/js/core/app-menu.js"></script>
 <script src="./app-assets/js/core/app.js"></script>
 <script src="./app-assets/js/scripts/components.js"></script>
 <!-- END: Theme JS-->
-
 </html>

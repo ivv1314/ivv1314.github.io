@@ -89,7 +89,6 @@ jQuery(function ($) {
 
    // 6. custom counter js with scrolling
     var isFirstTime = true;
-    var interval = null;
     var countSelector = $('.single-counter > span, .single-card > h3');
     if(countSelector.length) {
         var startingTop = countSelector.offset().top - window.innerHeight;
@@ -143,10 +142,12 @@ jQuery(function ($) {
     function count(counters, start, value, id) {
         var localStart = start;
         var inc = incrementValue(value);
-        interval = setInterval(function() {
+        var interval = setInterval(function() {
             if (localStart < value) {
                 localStart = localStart+inc;
                 counters[id].innerHTML = localStart;
+            }else {
+                clearInterval(interval)
             }
         }, 40);
     }
@@ -163,7 +164,7 @@ jQuery(function ($) {
         for (var i = 0; i < countersQuantity; i++) {
             counter[i] = parseInt(counters[i].innerHTML);
         }
-
+    console.log(counter)
         // calling all count function
         for (var j = 0; j < countersQuantity; j++) {
             count(counters, 0, counter[j], j);

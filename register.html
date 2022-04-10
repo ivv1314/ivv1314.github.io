@@ -67,7 +67,7 @@
                     <p class="px-2">Isi formulir untuk membuat akun.</p>
                     <div class="card-content">
                       <div class="card-body p-1">
-                        <form method="POST" action="./register">
+                        <form id="form" method="POST" action="javascript:">
                           <input type="hidden" name="_token" value="SAjWKJI1PIJTiybwpYpsihR65DlYeBG5F86XVdXm">
                           <div class="form-label-group">
                             <input placeholder="Name Lengkap" id="name" type="text" class="form-control " name="name"
@@ -116,9 +116,9 @@
                               </fieldset>
                             </div>
                           </div>
-                          <a href=./login
+                          <a href="./login.html"
                             class="btn btn-outline-primary float-left btn-inline mb-50">Login</a>
-                          <button type="submit" class="btn btn-primary float-right btn-inline mb-50">Register</a>
+                          <button type="submit" class="btn btn-primary float-right btn-inline mb-50">Register</button>
                         </form>
                       </div>
                     </div>
@@ -132,10 +132,11 @@
       </div>
     </div>
   </div>
+</body>
   <!-- BEGIN: Vendor JS-->
   <script src="./app-assets/vendors/js/vendors.min.js"></script>
   <!-- BEGIN Vendor JS-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.js"></script>
+  <script src="./libs/feather-icons/feather.js"></script>
   <!-- BEGIN: Theme JS-->
   <script src="./app-assets/js/core/app-menu.js"></script>
   <script src="./app-assets/js/core/app.js"></script>
